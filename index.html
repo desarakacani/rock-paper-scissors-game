@@ -58,11 +58,12 @@ var play = $('.choice').click(function() {
   var winner=compare(user,computer);
 
   results.push(winner);
+  $('ul').empty();
 
 	if(results.length === 5 ) {
 	
 		results.forEach(function(result) {
-		
+
 		$(".header ul").append('<li>'+result.str+'\</li>');
 	})
 	
